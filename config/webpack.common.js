@@ -1,7 +1,6 @@
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var CopyWebpackPlugin = require("copy-webpack-plugin");
 var helpers = require("./helpers");
 
 module.exports = {
@@ -57,16 +56,6 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: [ "app", "vendor", "polyfills" ]
         }),
-
-        /*
-         * Copy static assets to the build directory.
-         */
-        new CopyWebpackPlugin([
-            {
-                from: "src/assets",
-                to: "assets"
-            }
-        ]),
 
         new HtmlWebpackPlugin({
             template: "src/index.html"

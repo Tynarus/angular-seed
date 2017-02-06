@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "repository": {
         "type": "GIT",
-        "url": "https://github.com/Plum-Crazy/barth-tuning"
+        "url": "https://github.com/Plum-Crazy/angular-seed"
     },
     "scripts": {
         "start": "webpack-dev-server --inline --config config/webpack.dev.js --progress --port 3000",
