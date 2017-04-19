@@ -11,12 +11,12 @@
         "suppressImplicitAnyIndexErrors": true,
         "typeRoots": [
             "../node_modules/@types"
-        ],
-        "types": [
-            "node", "jasmine"
         ]
     },
     "exclude": [
         "../node_modules"
+    ],
+    "include": [
+        "../**/*"
     ]
 }
