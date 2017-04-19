@@ -28,7 +28,7 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                use: "pug-html-loader"
+                use: [ "raw-loader", "pug-html-loader" ]
             },
             {
                 test: /\.scss$/,
@@ -63,9 +63,11 @@ module.exports = {
 
         // Workaround for Angular-SystemJS-Webpack(2) WARNINGS
         new webpack.ContextReplacementPlugin(
-            /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-            helpers.root("src"),
-            {}
+            /angular(\\|\/)core(\\|\/)@angular/,
+            helpers.root('src'), // location of your src
+            {
+                // your Angular Async Route paths relative to this root directory
+            }
         )
     ]
 };

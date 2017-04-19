@@ -1,9 +1,9 @@
-## Angular2 Seed Project
+## Angular 4 Seed Project
 
-A basic Angular2 seed project utilizing the following technologies:
+A basic Angular 4 seed project utilizing the following technologies:
 
-* Angular 2.4.5
-* TypeScript 2+
+* Angular 4.0.2
+* TypeScript 2.2
 * Karma/Jasmine (unit testing)
 * Codelyzer & TSLint (code linting)
 * PugJS (template engine)
