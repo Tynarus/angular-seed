@@ -1,0 +1,12 @@
+/**
+ * Global Application Styles
+ */
+
+@import "constants";
+
+body {
+	background-color: $primary-bg;
+	color: $primary-color;
+	font-family: $primary-font;
+	font-size: $primary-font-size;
+}
