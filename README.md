@@ -16,3 +16,4 @@ A basic Angular 4 seed project utilizing the following technologies:
 * `npm run coverage` - run the project unit tests one time and print out a coverage report, generated under **/coverage/index.html**
 * `npm run lint` - run the project linting (will be run every time `npm test` is run)
 * `npm run build` - generate a production build for the project, which will be inserted into dist/
+* `npm run server` - run a live-server instance off of the **dist/** directory (generated from the `build` command)
