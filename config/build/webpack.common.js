@@ -1,12 +1,14 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var helpers = require('../helpers');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const helpers = require('../helpers');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
-        'app': './src/main.ts'
+        'app': './src/main.ts',
+        'styles': './src/global.scss'
     },
 
     resolve: {
@@ -28,20 +30,17 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: [ /node_modules/, helpers.root('src', 'global.scss') ],
-                use: [ 'raw-loader', 'sass-loader' ]
+                use: [ 'to-string-loader', 'css-loader', 'sass-loader' ]
             },
             {
-                test: helpers.root('src', 'global.scss'),
-                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+                test: /global\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader!sass-loader'
+                })
             },
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|otf|ttf|eot|ico)$/,
                 use: 'file-loader?name=assets/[name].[hash].[ext]'
-            },
-            {
-                test: /\.css$/,
-                exclude: helpers.root('src', 'app'),
-                use: [ 'raw-loader', 'css-loader' ]
             }
         ]
     },
@@ -57,7 +56,7 @@ module.exports = {
 
         new webpack.ContextReplacementPlugin(
             /angular(\\|\/)core(\\|\/)@angular/,
-            helpers.root('src'), // location of your src
+            helpers.root('src'),
             {}
         )
     ]
