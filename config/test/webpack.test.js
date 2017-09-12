@@ -22,12 +22,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                use: [ 'to-string-loader', 'sass-loader' ]
-            },
-            {
-                test: /\.css$/,
-                include: helpers.root('src', 'app'),
-                use: 'to-string-loader'
+                use: [ 'to-string-loader', 'css-loader', 'sass-loader' ]
             }
         ]
     },
