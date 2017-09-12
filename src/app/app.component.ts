@@ -2,7 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
     selector: "tyn-app",
-    template: require("./app.component.pug"),
+    templateUrl: './app.component.html',
     styleUrls: [ "./app.component.scss" ],
     encapsulation: ViewEncapsulation.None
 })

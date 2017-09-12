@@ -53,8 +53,6 @@
         "loader-utils": "^1.1.0",
         "node-sass": "^4.5.3",
         "protractor": "~5.1.2",
-        "pug": "^2.0.0-beta12",
-        "pug-html-loader": "^1.1.4",
         "raw-loader": "^0.5.1",
         "reflect-metadata": "^0.1.10",
         "sass-loader": "^6.0.6",

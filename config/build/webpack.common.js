@@ -26,10 +26,6 @@ module.exports = {
                 use: 'html-loader'
             },
             {
-                test: /\.pug$/,
-                use: [ 'raw-loader', 'pug-html-loader' ]
-            },
-            {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 use: [ 'raw-loader', 'css-loader', 'sass-loader' ]
