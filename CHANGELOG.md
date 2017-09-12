@@ -5,7 +5,7 @@
 * [Switched from ts-loader to awesome-typescript-loader](https://github.com/Tynarus/angular-seed/issues/9)
 * [Removed use of PugJS](https://github.com/Tynarus/angular-seed/issues/2)
 * [Added a new command for unit test coverage reporting](https://github.com/Tynarus/angular-seed/issues/1)
-* [Added a global over-arching scss file](https://github.com/Tynarus/angular-seed/issues/4) (915848b460cf43c110f2c959ee853155e920616e)
+* [Added a global over-arching scss file](https://github.com/Tynarus/angular-seed/issues/4) 915848b460cf43c110f2c959ee853155e920616e
 * Improved organization of configuration files
 * Cleaned up package.json dependencies
 * Switched to a new repository under [Tynarus](https://github.com/Tynarus)
