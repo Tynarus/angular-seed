@@ -24,7 +24,8 @@ module.exports = function(config) {
             require('karma-sourcemap-loader')
         ],
         client:{
-            clearContext: false
+            clearContext: false,
+            args: [ '--coverage', config.coverage ]
         },
         webpack: webpackConfig,
         coverageIstanbulReporter: {
@@ -34,14 +35,12 @@ module.exports = function(config) {
                 exclude: /\*.spec.ts/
             }
         },
-        // TODO build flag/param to specify coverage mode
-        reporters: [ 'progress', /*'kjhtml', */'coverage-istanbul' ],
+        reporters: config.coverage ? [ 'progress', 'coverage-istanbul' ] : [ 'progress', 'kjhtml' ],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
         browsers: [ 'Chrome' ],
-        // TODO coverage param applies to this, too!
-        singleRun: true
+        singleRun: config.coverage
     });
 };
