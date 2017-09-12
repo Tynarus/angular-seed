@@ -10,6 +10,7 @@
     "scripts": {
         "start": "webpack-dev-server --inline --config config/build/webpack.dev.js --progress --port 3000",
         "test": "karma start config/test/karma.conf.js",
+        "coverage": "npm run lint && karma start config/test/karma.conf.js --coverage=true",
         "lint": "tslint -c config/tslint.json \"src/app/**/*.ts\"",
         "pretest": "npm run lint",
         "build": "rimraf dist && webpack --config config/build/webpack.prod.js --progress --profile --bail"
