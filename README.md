@@ -2,13 +2,12 @@
 
 A basic Angular 4 seed project utilizing the following technologies:
 
-* Angular 4.0.2
-* TypeScript 2.2
-* Karma/Jasmine (unit testing)
-* Codelyzer & TSLint (code linting)
-* PugJS (template engine)
-* SASS (css superset)
-* Webpack 2+ (build tools)
+* Angular 4.3.5
+* TypeScript 2.5
+* Karma/Jasmine
+* Codelyzer & TSLint
+* SASS/SCSS
+* Webpack 3
 
 ### Commands
 

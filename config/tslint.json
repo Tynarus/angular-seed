@@ -7,7 +7,7 @@
                   true,
                   "attribute",
                   [
-                        "plum"
+                        "tyn"
                   ],
                   "camelCase"
             ],
@@ -15,7 +15,7 @@
                   true,
                   "element",
                   [
-                        "plum"
+                        "tyn"
                   ],
                   "kebab-case"
             ],

@@ -1,11 +1,11 @@
-import { TestBed } from "@angular/core/testing";
+import { async, TestBed } from '@angular/core/testing';
 
-import { AppComponent } from "./app.component";
-import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
+import { AppComponent } from './app.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
-describe("AppComponent", () => {
+describe('AppComponent', () => {
 
-    beforeEach(() => {
+    beforeEach(async() => {
         TestBed.configureTestingModule({
             schemas: [
                 CUSTOM_ELEMENTS_SCHEMA
@@ -17,10 +17,10 @@ describe("AppComponent", () => {
     });
 
     // Extremely basic example test. Just checks that the created Component is the type we expect.
-    it("should create the Angular component", () => {
+    it('creates the component', async(() => {
         let fixture = TestBed.createComponent(AppComponent);
 
         expect(fixture.componentInstance instanceof AppComponent).toBe(true);
-    });
+    }));
 
 });
