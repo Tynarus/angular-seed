@@ -6,7 +6,8 @@ module.exports = {
     entry: {
         'polyfills': './src/polyfills.ts',
         'vendor': './src/vendor.ts',
-        'app': './src/main.ts'
+        'app': './src/main.ts',
+        'styles': [ './src\\global.scss' ]
     },
 
     resolve: {
@@ -27,8 +28,12 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                exclude: /node_modules/,
-                use: [ 'raw-loader', 'css-loader', 'sass-loader' ]
+                exclude: [ /node_modules/, helpers.root('src', 'global.scss') ],
+                use: [ 'raw-loader', 'sass-loader' ]
+            },
+            {
+                test: helpers.root('src', 'global.scss'),
+                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
             },
             {
                 test: /\.(png|jpe?g|gif|svg|woff|woff2|otf|ttf|eot|ico)$/,

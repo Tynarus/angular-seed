@@ -57,7 +57,7 @@
         "raw-loader": "^0.5.1",
         "reflect-metadata": "^0.1.10",
         "sass-loader": "^6.0.6",
-        "style-loader": "^0.13.1",
+        "style-loader": "^0.18.2",
         "tslint": "~5.7.0",
         "typescript": "~2.5.2",
         "webpack": "~3.4.1",
