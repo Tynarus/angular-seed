@@ -1,6 +1,6 @@
 # 2.0.0
 ### Features
-* [Upgraded Angular from 4.0.2 to 4.3.5](https://github.com/Tynarus/angular-seed/issues/6) ([41be4e2](https://github.com/Tynarus/angular-seed/commit/41be4e2b9c3bc1715eb767db6c1a00a3e9344307))
+* [Upgraded Angular from 4.0.2 to 4.3.6](https://github.com/Tynarus/angular-seed/issues/6) ([41be4e2](https://github.com/Tynarus/angular-seed/commit/41be4e2b9c3bc1715eb767db6c1a00a3e9344307))
 * [Upgraded Webpack from 2.2.0 to 3.4.1](https://github.com/Tynarus/angular-seed/issues/8) ([41be4e2](https://github.com/Tynarus/angular-seed/commit/41be4e2b9c3bc1715eb767db6c1a00a3e9344307))
 * [Upgraded TypeScript from 2.2.0 to 2.5.2](https://github.com/Tynarus/angular-seed/issues/7) ([41be4e2](https://github.com/Tynarus/angular-seed/commit/41be4e2b9c3bc1715eb767db6c1a00a3e9344307))
 * [Switched from ts-loader to awesome-typescript-loader](https://github.com/Tynarus/angular-seed/issues/9) ([41be4e2](https://github.com/Tynarus/angular-seed/commit/41be4e2b9c3bc1715eb767db6c1a00a3e9344307))
