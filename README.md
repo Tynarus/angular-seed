@@ -6,7 +6,7 @@ The purpose of this seed project is to create an Angular environment with a litt
 
 This makes makes configuration files much easier to find, as well as helping keep the general project structure a lot cleaner! 
 
-* Angular 4.3.5
+* Angular 4.3.6
 * TypeScript 2.5
 * Karma/Jasmine
 * Codelyzer & TSLint
