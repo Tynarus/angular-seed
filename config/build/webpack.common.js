@@ -30,7 +30,23 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: [ /node_modules/, helpers.root('src', 'global.scss') ],
-                use: [ 'to-string-loader', 'css-loader', 'sass-loader' ]
+                use: [
+                    {
+                        loader: 'to-string-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
             },
             {
                 test: /global\.scss$/,
